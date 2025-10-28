@@ -1,0 +1,11 @@
+Tree 1,Tree 2,Tree 3
+"['MntGoldProds', '>', np.float64(16.5), 'Recency']","['Income', '<=', np.float64(75140.5), 'Recency']","['Income', '<=', np.float64(75343.5), 'Recency']"
+"['Recency', '<=', np.float64(40.5), 'NumCatalogPurchases']","['Recency', '<=', np.float64(37.5), 'NumCatalogPurchases']","['Recency', '<=', np.float64(12.5), 'NumCatalogPurchases']"
+"['NumCatalogPurchases', '>', np.float64(0.5), 'Income']","['NumCatalogPurchases', '>', np.float64(0.5), 'Income']","['NumCatalogPurchases', '>', np.float64(0.5), 'NumStorePurchases']"
+"['Income', '<=', np.float64(77936.5), 'NumStorePurchases']","['Income', '>', np.float64(39987.0), 'Recency']","['NumStorePurchases', '<=', np.float64(9.5), 'NumStorePurchases']"
+"['NumStorePurchases', '<=', np.float64(11.5), 'NumWebVisitsMonth']","['Recency', '<=', np.float64(12.5), 'NumStorePurchases']","['NumStorePurchases', '>', np.float64(3.5), 'Income']"
+"['NumWebVisitsMonth', '<=', np.float64(7.5), 'Recency']","['NumStorePurchases', '<=', np.float64(9.5), 'Income']","['Income', '>', np.float64(30725.0), 'MntSweetProducts']"
+"['Recency', '<=', np.float64(18.5), 'MntGoldProds']","['Income', '<=', np.float64(74405.0), 'NumCatalogPurchases']","['MntSweetProducts', '<=', np.float64(19.5), 'NumWebVisitsMonth']"
+"['MntGoldProds', '>', np.float64(27.5), 'MntSweetProducts']","['NumCatalogPurchases', '<=', np.float64(4.5), 'NumWebVisitsMonth']","['NumWebVisitsMonth', '<=', np.float64(6.5), 'NumCatalogPurchases']"
+"['MntSweetProducts', '<=', np.float64(78.5), 'MntFruits']","['NumWebVisitsMonth', '>', np.float64(3.5), 'Year_Birth']","['NumCatalogPurchases', '>', np.float64(2.5), 'MntGoldProds']"
+"['MntFruits', '<=', np.float64(170.5), np.int64(1)]","['Year_Birth', '>', np.float64(1957.5), np.int64(1)]","['MntGoldProds', '>', np.float64(22.5), np.int64(1)]"
