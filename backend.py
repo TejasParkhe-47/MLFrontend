@@ -41,6 +41,7 @@ def train_model():
 
     # Save features for prediction
     features_list = model_obj.feature_names
+    features_list.remove('Response')  # Assuming 'Response' is the label column
 
     return jsonify({
         "accuracy": accuracy,
@@ -145,7 +146,7 @@ def predict():
     # Track decision flow
     model_obj.x = 0
     model_obj.output_flow = {i+1: [] for i in range(model_obj.n_estimators)}
-    model_obj.reset_flow() #this was changed by me in backend.py
+    
 
     _ = model_obj.model.predict(X)
 

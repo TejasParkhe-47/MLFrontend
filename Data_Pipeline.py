@@ -23,26 +23,11 @@ class Generate_JSON:
         self.random_state = random_state
         self.test_size = test_size
         self.feature_names = self.data.columns.tolist()
-        # initialize output_flow based on instance n_estimators
-        self.output_flow = {}
         for i in range(self.n_estimators):
             self.output_flow[i+1] = list()
-        self.z = 0
-        self.x = 0
 
     def majority_vote(self,y):
         return max(set(y), key=y.count)
-
-    def reset_flow(self):
-        """
-        Reset output_flow and counters so every prediction starts fresh.
-        Call this before predicting a new sample.
-        """
-        self.output_flow = {}
-        for i in range(self.n_estimators):
-            self.output_flow[i+1] = []
-        self.x = 0
-        # Note: we don't reset self.dic because it's the trained structure
 
     class DecisionTree:
         feature_names = 0
@@ -128,19 +113,14 @@ class Generate_JSON:
             feature, threshold, left, right = node
             if x[feature] <= threshold:
                 try:
-                    # append step to the correct per-tree list (outer.x should be set to tree index)
-                    lst = self.outer.output_flow.get(self.outer.x)
-                    if lst is not None:
-                        lst.append([self.outer.feature_names[feature],'<=',threshold,self.check(node[2])])
-                except Exception:
+                    self.outer.output_flow.get(self.outer.x).append([self.outer.feature_names[feature],'<=',threshold,self.check(node[2])])
+                except:
                     pass
                 return self.predict_one(x, left)
             else:
                 try:
-                    lst = self.outer.output_flow.get(self.outer.x)
-                    if lst is not None:
-                        lst.append([self.outer.feature_names[feature],'>',threshold,self.check(node[3])])
-                except Exception:
+                    self.outer.output_flow.get(self.outer.x).append([self.outer.feature_names[feature],'>',threshold,self.check(node[3])])
+                except:
                     pass        
                 return self.predict_one(x, right)
 
@@ -174,18 +154,12 @@ class Generate_JSON:
                 self.trees.append(tree)
 
         def predict(self, X):
-            """
-            Predict for each sample in X.
-            For each tree we set outer.x to the tree index (1-based) so the DecisionTree will append its
-            steps to output_flow[tree_index]. This avoids cumulative indexing across predictions.
-            """
             predictions = []
-            for x_input in X:
+            for x in X:
                 tree_preds = []
-                for tree_idx, tree in enumerate(self.trees):
-                    # set outer.x to current tree index (1-based)
-                    self.outer.x = tree_idx + 1
-                    tree_preds.append(tree.predict_one(x_input, tree.tree))
+                for tree in self.trees:
+                    self.outer.x+=1
+                    tree_preds.append(tree.predict_one(x, tree.tree))
                 predictions.append(self.outer.majority_vote(tree_preds))
             return predictions
 

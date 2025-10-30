@@ -136,7 +136,7 @@ const DecisionTreeFlow = ({ treeId, flow }) => {
         },
         position: { x: (index % 2) * xStep - xStep / 2, y: index * yStep },
         style: {
-          background: isLeaf ? "#dcfce7" : "#eef2ff",
+          background: isLeaf ? `${next? "#00ff00" : "#ff0000"}` : "#eef2ff",
           border: "3px solid #6366f1",
           borderRadius: 12,
           padding: 10,
@@ -274,7 +274,7 @@ const App = () => {
     <div className="p-8 font-sans max-w-7xl mx-auto bg-gray-50 min-h-screen">
       <header className="mb-10 border-b-4 border-indigo-200 pb-4">
         <h1 className="text-4xl font-extrabold text-indigo-700 flex items-center gap-3">
-          <Zap className="w-8 h-8 text-yellow-500" /> Explainable Model Interface
+          <Zap className="w-8 h-8 text-yellow-500" /> MarketMind - Marketing Success Predictor
         </h1>
         <p className="text-gray-600 mt-2">
           Upload a CSV to train your model, visualize every decision tree, and view the learned structure.
