@@ -23,31 +23,42 @@ def train_model():
         return jsonify({"error": "No file provided"}), 400
 
     file = request.files['file']
+    os.makedirs("temp", exist_ok=True)
     filepath = os.path.join("temp", file.filename)
     file.save(filepath)
 
-    # Initialize model object
-    model_obj = Generate_JSON(filepath, n_estimators=3, max_depth=10)
-    X_train, X_test, y_train, y_test = model_obj.resample_split_data()
+    try:
+        # Initialize and train model
+        model_obj = Generate_JSON(filepath, n_estimators=3, max_depth=10)
+        X_train, X_test, y_train, y_test = model_obj.resample_split_data()
 
-    # Train and generate JSON structure
-    model_obj.to_json(X_train, y_train)
+        # Train model and generate structure files
+        model_obj.to_json(X_train, y_train)
 
-    # Evaluate
-    y_pred = pd.DataFrame(model_obj.model.predict(X_test))
-    accuracy = round((y_pred[0] == y_test.values).mean() * 100, 2)
-    from sklearn.metrics import classification_report
-    report = classification_report(y_test, y_pred, output_dict=True)
+        # Prepare feature list (excluding 'Response')
+        features_list = [f for f in model_obj.feature_names if f.lower() != "response"]
 
-    # Save features for prediction
-    features_list = model_obj.feature_names
-    features_list.remove('Response')  # Assuming 'Response' is the label column
+        # Prepare sample train/test data (convert to dict for frontend)
+        train_df = pd.DataFrame(X_train, columns=features_list)
+        train_df["Response"] = y_train.values
 
-    return jsonify({
-        "accuracy": accuracy,
-        "classification_report": report,
-        "features": features_list
-    })
+        test_df = pd.DataFrame(X_test, columns=features_list)
+        test_df["Response"] = y_test.values
+
+        # Send only first few rows for frontend visualization
+        train_preview = train_df.to_dict(orient="records")
+        test_preview = test_df.to_dict(orient="records")
+
+        return jsonify({
+            "message": "Model trained successfully",
+            "features": features_list,
+            "train_data": train_preview,
+            "test_data": test_preview
+        })
+
+    except Exception as e:
+        print("Error during training:", e)
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route('/formatted-structure', methods=['GET'])
@@ -124,15 +135,56 @@ def formatted_structure():
 @app.route('/structure', methods=['GET'])
 def get_structure():
     try:
-        with open('Output/structure.json', 'r') as f:
+        with open('Output/reactflow_prediction.json', 'r') as f:
             data = json.load(f)
         return data
     except Exception as e:
         return jsonify({'error': str(e)})
 
 
+
+# backend.py
+
+# ... (Imports)
+# Make sure numpy is imported: import numpy as np 
+# ...
+
+
 @app.route("/predict", methods=["POST"])
 def predict():
+    global model_obj, features_list
+    if model_obj is None:
+        return jsonify({"error": "Train the model first!"}), 400
+
+    data = request.get_json()
+    X_row = [float(data[f]) for f in features_list]
+
+    forest_structures = {}
+    tree_predictions = []
+
+    for i, tree in enumerate(model_obj.model.trees, start=1):
+        # Use the bulletproof method
+        tree_structure = tree.build_tree_with_highlighted_path(X_row, tree_id=i)
+        forest_structures[i] = {
+            "nodes": tree_structure["nodes"],
+            "edges": tree_structure["edges"]
+        }
+        tree_predictions.append(tree_structure["prediction"])
+    
+    # Calculate final prediction
+    final_pred = model_obj.majority_vote(tree_predictions)
+    
+    print(f"Tree predictions: {tree_predictions}")
+    print(f"Final prediction: {final_pred}")
+
+    return jsonify({
+        "prediction": int(final_pred),
+        "tree_predictions": tree_predictions,
+        "decision_paths": forest_structures
+    })
+
+@app.route("/test", methods=["POST"])
+def predict1():
     global model_obj, features_list
     if model_obj is None:
         return jsonify({"error": "Train the model first!"}), 400
@@ -150,25 +202,38 @@ def predict():
 
     _ = model_obj.model.predict(X)
 
-    # Convert output_flow safely
-    flow_converted = {}
-    for k, v in model_obj.output_flow.items():
-        flow_converted[int(k)] = [
-            [
-                str(item[0]),
-                str(item[1]),
-                float(item[2]),
-                int(item[3]) if isinstance(item[3], (int, float, np.integer, np.floating)) else str(item[3])
-            ]
-            for item in v
-        ]
+    
+    
 
-    print("Prediction flow:", flow_converted);
+    flow_converted ={}
     return jsonify({
         "prediction": int(pred),
         "probabilities": [0.5, 0.5],
         "flow": flow_converted
     })
+
+
+@app.route('/tree-hierarchy', methods=['GET'])
+def tree_hierarchy():
+    try:
+        with open('Output/tree_hierarchy.json', 'r') as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+
+@app.route("/forest-structure", methods=["GET"])
+def forest_structure():
+    try:
+        with open("Output/reactflow_forest.json", "r") as f:
+            data = json.load(f)
+        return jsonify(data)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+
 
 
 

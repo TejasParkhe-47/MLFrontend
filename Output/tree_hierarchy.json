@@ -1,0 +1,2755 @@
+{
+    "1": {
+        "feature": "NumCatalogPurchases",
+        "threshold": 5.5,
+        "left": {
+            "feature": "Recency",
+            "threshold": 23.5,
+            "left": {
+                "feature": "NumWebVisitsMonth",
+                "threshold": 7.5,
+                "left": {
+                    "feature": "NumCatalogPurchases",
+                    "threshold": 0.5,
+                    "left": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 15.0,
+                        "left": {
+                            "leaf": 0
+                        },
+                        "right": {
+                            "feature": "Recency",
+                            "threshold": 15.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "NumStorePurchases",
+                        "threshold": 11.5,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 0.5,
+                            "left": {
+                                "feature": "MntGoldProds",
+                                "threshold": 33.5,
+                                "left": {
+                                    "feature": "NumStorePurchases",
+                                    "threshold": 5.5,
+                                    "left": {
+                                        "feature": "MntSweetProducts",
+                                        "threshold": 8.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            },
+                            "right": {
+                                "feature": "Year_Birth",
+                                "threshold": 1948.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 27.5,
+                                    "left": {
+                                        "feature": "Income",
+                                        "threshold": 55681.5,
+                                        "left": {
+                                            "feature": "NumWebVisitsMonth",
+                                            "threshold": 3.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "MntSweetProducts",
+                                            "threshold": 15.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 108.5,
+                                        "left": {
+                                            "feature": "Income",
+                                            "threshold": 88181.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "NumWebVisitsMonth",
+                                            "threshold": 5.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Year_Birth",
+                            "threshold": 1949.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "feature": "MntFruits",
+                                "threshold": 2.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "MntSweetProducts",
+                    "threshold": 2.5,
+                    "left": {
+                        "feature": "Recency",
+                        "threshold": 10.5,
+                        "left": {
+                            "feature": "MntFruits",
+                            "threshold": 2.5,
+                            "left": {
+                                "feature": "Income",
+                                "threshold": 47530.0,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 5.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 4.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Year_Birth",
+                            "threshold": 1972.5,
+                            "left": {
+                                "feature": "Income",
+                                "threshold": 25674.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "Year_Birth",
+                        "threshold": 1985.0,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 0.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "MntGoldProds",
+                                "threshold": 8.0,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 1.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "NumStorePurchases",
+                                        "threshold": 3.5,
+                                        "left": {
+                                            "feature": "Recency",
+                                            "threshold": 10.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "MntFruits",
+                                    "threshold": 54.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "feature": "MntFruits",
+                                        "threshold": 66.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    }
+                }
+            },
+            "right": {
+                "feature": "Income",
+                "threshold": 81350.0,
+                "left": {
+                    "feature": "Recency",
+                    "threshold": 82.5,
+                    "left": {
+                        "feature": "MntGoldProds",
+                        "threshold": 16.5,
+                        "left": {
+                            "feature": "NumWebVisitsMonth",
+                            "threshold": 6.5,
+                            "left": {
+                                "feature": "MntFruits",
+                                "threshold": 63.0,
+                                "left": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 15.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "Income",
+                                        "threshold": 40254.0,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 58.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "NumCatalogPurchases",
+                                "threshold": 1.5,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 48.5,
+                                    "left": {
+                                        "feature": "NumWebVisitsMonth",
+                                        "threshold": 7.5,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "feature": "Income",
+                                            "threshold": 26241.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "MntFruits",
+                                        "threshold": 24.5,
+                                        "left": {
+                                            "feature": "NumStorePurchases",
+                                            "threshold": 2.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 12.0,
+                                    "left": {
+                                        "feature": "Income",
+                                        "threshold": 60552.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "NumWebVisitsMonth",
+                            "threshold": 4.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 72.5,
+                                "left": {
+                                    "feature": "MntSweetProducts",
+                                    "threshold": 119.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 43.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Income",
+                                    "threshold": 71847.5,
+                                    "left": {
+                                        "feature": "NumWebVisitsMonth",
+                                        "threshold": 1.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "feature": "NumWebVisitsMonth",
+                                            "threshold": 3.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "NumStorePurchases",
+                                "threshold": 5.5,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 37.5,
+                                    "left": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 19.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "feature": "Income",
+                                            "threshold": 45519.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 69.5,
+                                        "left": {
+                                            "feature": "Recency",
+                                            "threshold": 55.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "Income",
+                                            "threshold": 41663.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Year_Birth",
+                                    "threshold": 1969.5,
+                                    "left": {
+                                        "feature": "MntSweetProducts",
+                                        "threshold": 14.5,
+                                        "left": {
+                                            "feature": "NumWebVisitsMonth",
+                                            "threshold": 7.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "MntGoldProds",
+                                            "threshold": 36.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "MntSweetProducts",
+                                        "threshold": 2.0,
+                                        "left": {
+                                            "feature": "Income",
+                                            "threshold": 54072.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "NumCatalogPurchases",
+                                            "threshold": 1.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "NumCatalogPurchases",
+                        "threshold": 4.5,
+                        "left": {
+                            "feature": "NumStorePurchases",
+                            "threshold": 2.5,
+                            "left": {
+                                "feature": "Income",
+                                "threshold": 44065.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 85.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 87.5,
+                                "left": {
+                                    "feature": "NumWebVisitsMonth",
+                                    "threshold": 7.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "NumCatalogPurchases",
+                                        "threshold": 0.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "NumStorePurchases",
+                            "threshold": 7.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 89.0,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 95.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "MntFruits",
+                    "threshold": 133.5,
+                    "left": {
+                        "feature": "MntGoldProds",
+                        "threshold": 187.5,
+                        "left": {
+                            "feature": "Income",
+                            "threshold": 92512.0,
+                            "left": {
+                                "feature": "NumCatalogPurchases",
+                                "threshold": 2.5,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 62.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "feature": "MntSweetProducts",
+                                    "threshold": 146.5,
+                                    "left": {
+                                        "feature": "Year_Birth",
+                                        "threshold": 1960.0,
+                                        "left": {
+                                            "feature": "Recency",
+                                            "threshold": 62.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "MntFruits",
+                                "threshold": 22.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "Income",
+                                    "threshold": 94671.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    },
+                    "right": {
+                        "leaf": 0
+                    }
+                }
+            }
+        },
+        "right": {
+            "feature": "Recency",
+            "threshold": 46.5,
+            "left": {
+                "feature": "Income",
+                "threshold": 131308.5,
+                "left": {
+                    "feature": "NumStorePurchases",
+                    "threshold": 7.5,
+                    "left": {
+                        "feature": "MntGoldProds",
+                        "threshold": 37.5,
+                        "left": {
+                            "feature": "MntGoldProds",
+                            "threshold": 30.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 1.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "MntFruits",
+                                    "threshold": 8.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        },
+                        "right": {
+                            "feature": "MntSweetProducts",
+                            "threshold": 180.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 21.0,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "Income",
+                        "threshold": 71594.0,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 38.0,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        },
+                        "right": {
+                            "feature": "MntGoldProds",
+                            "threshold": 37.5,
+                            "left": {
+                                "feature": "MntGoldProds",
+                                "threshold": 19.5,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 24.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 2.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 124.0,
+                                    "left": {
+                                        "feature": "MntFruits",
+                                        "threshold": 130.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 136.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "feature": "Income",
+                                            "threshold": 80265.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "leaf": 0
+                }
+            },
+            "right": {
+                "feature": "Income",
+                "threshold": 81877.5,
+                "left": {
+                    "feature": "NumWebVisitsMonth",
+                    "threshold": 5.5,
+                    "left": {
+                        "feature": "NumStorePurchases",
+                        "threshold": 7.5,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 66.0,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 54.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "MntFruits",
+                                    "threshold": 86.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 57.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    },
+                    "right": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 4.0,
+                        "left": {
+                            "leaf": 0
+                        },
+                        "right": {
+                            "feature": "MntFruits",
+                            "threshold": 6.0,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 52.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "Income",
+                                    "threshold": 47482.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "Income",
+                                        "threshold": 62956.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "feature": "Recency",
+                                            "threshold": 64.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "MntFruits",
+                    "threshold": 21.5,
+                    "left": {
+                        "leaf": 0
+                    },
+                    "right": {
+                        "feature": "Year_Birth",
+                        "threshold": 1952.5,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 72.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        },
+                        "right": {
+                            "feature": "MntGoldProds",
+                            "threshold": 6.0,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "MntSweetProducts",
+                                "threshold": 19.0,
+                                "left": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 33.0,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 86.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 93.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "2": {
+        "feature": "MntGoldProds",
+        "threshold": 15.5,
+        "left": {
+            "feature": "NumCatalogPurchases",
+            "threshold": 1.5,
+            "left": {
+                "feature": "Recency",
+                "threshold": 19.5,
+                "left": {
+                    "feature": "NumWebVisitsMonth",
+                    "threshold": 7.5,
+                    "left": {
+                        "feature": "Year_Birth",
+                        "threshold": 1981.0,
+                        "left": {
+                            "feature": "MntGoldProds",
+                            "threshold": 9.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "Year_Birth",
+                                "threshold": 1970.0,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 7.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "feature": "NumStorePurchases",
+                                    "threshold": 7.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Recency",
+                            "threshold": 9.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 0.5,
+                        "left": {
+                            "feature": "MntGoldProds",
+                            "threshold": 0.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        },
+                        "right": {
+                            "feature": "Recency",
+                            "threshold": 1.5,
+                            "left": {
+                                "feature": "Income",
+                                "threshold": 26829.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            },
+                            "right": {
+                                "feature": "MntGoldProds",
+                                "threshold": 1.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "NumStorePurchases",
+                    "threshold": 2.5,
+                    "left": {
+                        "feature": "Recency",
+                        "threshold": 63.0,
+                        "left": {
+                            "feature": "MntGoldProds",
+                            "threshold": 6.0,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "NumWebVisitsMonth",
+                                "threshold": 6.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "Income",
+                                    "threshold": 40140.0,
+                                    "left": {
+                                        "feature": "Recency",
+                                        "threshold": 32.0,
+                                        "left": {
+                                            "feature": "Recency",
+                                            "threshold": 23.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    },
+                    "right": {
+                        "feature": "MntFruits",
+                        "threshold": 25.5,
+                        "left": {
+                            "feature": "Year_Birth",
+                            "threshold": 1949.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 36.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        },
+                        "right": {
+                            "leaf": 1
+                        }
+                    }
+                }
+            },
+            "right": {
+                "feature": "NumWebVisitsMonth",
+                "threshold": 5.5,
+                "left": {
+                    "feature": "MntGoldProds",
+                    "threshold": 0.5,
+                    "left": {
+                        "feature": "NumWebVisitsMonth",
+                        "threshold": 1.5,
+                        "left": {
+                            "leaf": 0
+                        },
+                        "right": {
+                            "feature": "Income",
+                            "threshold": 68835.0,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 104.5,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 5.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 2.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        },
+                        "right": {
+                            "leaf": 1
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "Income",
+                    "threshold": 63117.0,
+                    "left": {
+                        "feature": "Year_Birth",
+                        "threshold": 1970.5,
+                        "left": {
+                            "feature": "Income",
+                            "threshold": 49765.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 54.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Income",
+                            "threshold": 58545.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 56.0,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "Recency",
+                        "threshold": 13.5,
+                        "left": {
+                            "leaf": 1
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    }
+                }
+            }
+        },
+        "right": {
+            "feature": "Income",
+            "threshold": 81258.5,
+            "left": {
+                "feature": "Recency",
+                "threshold": 44.5,
+                "left": {
+                    "feature": "NumCatalogPurchases",
+                    "threshold": 0.5,
+                    "left": {
+                        "feature": "NumWebVisitsMonth",
+                        "threshold": 8.5,
+                        "left": {
+                            "leaf": 0
+                        },
+                        "right": {
+                            "leaf": 1
+                        }
+                    },
+                    "right": {
+                        "feature": "NumStorePurchases",
+                        "threshold": 11.5,
+                        "left": {
+                            "feature": "NumCatalogPurchases",
+                            "threshold": 4.5,
+                            "left": {
+                                "feature": "NumWebVisitsMonth",
+                                "threshold": 3.5,
+                                "left": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 21.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                },
+                                "right": {
+                                    "feature": "NumWebVisitsMonth",
+                                    "threshold": 8.5,
+                                    "left": {
+                                        "feature": "MntSweetProducts",
+                                        "threshold": 76.0,
+                                        "left": {
+                                            "feature": "NumCatalogPurchases",
+                                            "threshold": 2.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "NumStorePurchases",
+                                            "threshold": 6.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "MntSweetProducts",
+                                "threshold": 134.0,
+                                "left": {
+                                    "feature": "NumStorePurchases",
+                                    "threshold": 7.5,
+                                    "left": {
+                                        "feature": "NumCatalogPurchases",
+                                        "threshold": 10.5,
+                                        "left": {
+                                            "feature": "MntFruits",
+                                            "threshold": 4.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "Recency",
+                                            "threshold": 23.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Income",
+                                        "threshold": 68979.5,
+                                        "left": {
+                                            "feature": "Income",
+                                            "threshold": 55669.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "MntGoldProds",
+                                            "threshold": 37.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "NumStorePurchases",
+                                    "threshold": 5.0,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "MntGoldProds",
+                            "threshold": 172.5,
+                            "left": {
+                                "feature": "NumCatalogPurchases",
+                                "threshold": 8.5,
+                                "left": {
+                                    "feature": "MntFruits",
+                                    "threshold": 2.5,
+                                    "left": {
+                                        "feature": "Recency",
+                                        "threshold": 24.0,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 21.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 11.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "NumWebVisitsMonth",
+                    "threshold": 4.5,
+                    "left": {
+                        "feature": "Income",
+                        "threshold": 72009.0,
+                        "left": {
+                            "feature": "Year_Birth",
+                            "threshold": 1946.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "feature": "MntFruits",
+                                "threshold": 0.5,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 79.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Income",
+                                    "threshold": 68730.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "NumStorePurchases",
+                                        "threshold": 6.5,
+                                        "left": {
+                                            "feature": "Recency",
+                                            "threshold": 64.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Income",
+                            "threshold": 73403.0,
+                            "left": {
+                                "feature": "NumWebVisitsMonth",
+                                "threshold": 1.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 80.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "MntFruits",
+                                "threshold": 24.5,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 77.5,
+                                    "left": {
+                                        "feature": "Income",
+                                        "threshold": 78640.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                },
+                                "right": {
+                                    "feature": "NumCatalogPurchases",
+                                    "threshold": 2.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 243.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 40.5,
+                        "left": {
+                            "feature": "NumStorePurchases",
+                            "threshold": 6.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 87.5,
+                                "left": {
+                                    "feature": "MntSweetProducts",
+                                    "threshold": 9.5,
+                                    "left": {
+                                        "feature": "NumCatalogPurchases",
+                                        "threshold": 0.5,
+                                        "left": {
+                                            "feature": "Year_Birth",
+                                            "threshold": 1968.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "MntFruits",
+                                            "threshold": 3.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 51.5,
+                                        "left": {
+                                            "feature": "NumWebVisitsMonth",
+                                            "threshold": 8.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "NumCatalogPurchases",
+                                            "threshold": 4.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            },
+                            "right": {
+                                "feature": "MntSweetProducts",
+                                "threshold": 1.5,
+                                "left": {
+                                    "feature": "NumStorePurchases",
+                                    "threshold": 11.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 66.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "NumCatalogPurchases",
+                            "threshold": 4.5,
+                            "left": {
+                                "feature": "NumStorePurchases",
+                                "threshold": 8.5,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 92.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 76.5,
+                                    "left": {
+                                        "feature": "NumCatalogPurchases",
+                                        "threshold": 2.5,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "feature": "MntSweetProducts",
+                                            "threshold": 95.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "NumStorePurchases",
+                                "threshold": 12.5,
+                                "left": {
+                                    "feature": "Income",
+                                    "threshold": 47482.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "NumCatalogPurchases",
+                                        "threshold": 6.5,
+                                        "left": {
+                                            "feature": "MntGoldProds",
+                                            "threshold": 114.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "right": {
+                "feature": "NumCatalogPurchases",
+                "threshold": 7.5,
+                "left": {
+                    "feature": "NumStorePurchases",
+                    "threshold": 12.5,
+                    "left": {
+                        "feature": "MntGoldProds",
+                        "threshold": 186.0,
+                        "left": {
+                            "feature": "MntFruits",
+                            "threshold": 69.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 60.5,
+                                "left": {
+                                    "feature": "NumWebVisitsMonth",
+                                    "threshold": 0.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 67.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "MntFruits",
+                                        "threshold": 22.5,
+                                        "left": {
+                                            "feature": "NumCatalogPurchases",
+                                            "threshold": 3.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "Year_Birth",
+                                            "threshold": 1959.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "Year_Birth",
+                                "threshold": 1970.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "MntFruits",
+                                    "threshold": 95.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "NumWebVisitsMonth",
+                                        "threshold": 4.0,
+                                        "left": {
+                                            "feature": "Income",
+                                            "threshold": 81883.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Recency",
+                            "threshold": 16.0,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        }
+                    },
+                    "right": {
+                        "leaf": 0
+                    }
+                },
+                "right": {
+                    "feature": "Recency",
+                    "threshold": 86.5,
+                    "left": {
+                        "feature": "Recency",
+                        "threshold": 81.5,
+                        "left": {
+                            "leaf": 1
+                        },
+                        "right": {
+                            "feature": "Recency",
+                            "threshold": 83.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        }
+                    },
+                    "right": {
+                        "leaf": 0
+                    }
+                }
+            }
+        }
+    },
+    "3": {
+        "feature": "Income",
+        "threshold": 77621.0,
+        "left": {
+            "feature": "Recency",
+            "threshold": 19.5,
+            "left": {
+                "feature": "NumWebVisitsMonth",
+                "threshold": 7.5,
+                "left": {
+                    "feature": "NumCatalogPurchases",
+                    "threshold": 0.5,
+                    "left": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 12.0,
+                        "left": {
+                            "leaf": 0
+                        },
+                        "right": {
+                            "feature": "Recency",
+                            "threshold": 11.0,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "NumStorePurchases",
+                        "threshold": 9.5,
+                        "left": {
+                            "feature": "MntGoldProds",
+                            "threshold": 25.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 1.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 3.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 11.0,
+                                        "left": {
+                                            "feature": "Income",
+                                            "threshold": 60744.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "MntGoldProds",
+                                            "threshold": 14.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "MntSweetProducts",
+                                "threshold": 76.0,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 7.5,
+                                    "left": {
+                                        "feature": "Recency",
+                                        "threshold": 3.5,
+                                        "left": {
+                                            "feature": "Year_Birth",
+                                            "threshold": 1965.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "Year_Birth",
+                                            "threshold": 1974.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "NumStorePurchases",
+                                        "threshold": 3.5,
+                                        "left": {
+                                            "feature": "Income",
+                                            "threshold": 25354.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "NumCatalogPurchases",
+                                            "threshold": 2.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Income",
+                                    "threshold": 73472.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Income",
+                            "threshold": 70250.0,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 13.0,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 4.0,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "MntSweetProducts",
+                    "threshold": 2.5,
+                    "left": {
+                        "feature": "Income",
+                        "threshold": 47098.5,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 13.5,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 17.0,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "NumStorePurchases",
+                            "threshold": 7.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "Income",
+                                "threshold": 52775.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "Year_Birth",
+                        "threshold": 1988.0,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 1.5,
+                            "left": {
+                                "feature": "Income",
+                                "threshold": 23548.0,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            },
+                            "right": {
+                                "feature": "MntFruits",
+                                "threshold": 14.0,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 2.5,
+                                    "left": {
+                                        "feature": "Income",
+                                        "threshold": 36395.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "feature": "NumCatalogPurchases",
+                                    "threshold": 0.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 17.5,
+                                        "left": {
+                                            "feature": "MntSweetProducts",
+                                            "threshold": 11.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    }
+                }
+            },
+            "right": {
+                "feature": "Recency",
+                "threshold": 82.5,
+                "left": {
+                    "feature": "MntGoldProds",
+                    "threshold": 16.5,
+                    "left": {
+                        "feature": "NumCatalogPurchases",
+                        "threshold": 5.5,
+                        "left": {
+                            "feature": "NumStorePurchases",
+                            "threshold": 2.5,
+                            "left": {
+                                "feature": "MntGoldProds",
+                                "threshold": 6.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "Year_Birth",
+                                    "threshold": 1973.5,
+                                    "left": {
+                                        "feature": "Recency",
+                                        "threshold": 25.0,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 69.5,
+                                        "left": {
+                                            "feature": "NumWebVisitsMonth",
+                                            "threshold": 6.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "MntFruits",
+                                "threshold": 63.0,
+                                "left": {
+                                    "feature": "Income",
+                                    "threshold": 27069.0,
+                                    "left": {
+                                        "feature": "Income",
+                                        "threshold": 23840.5,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "feature": "Year_Birth",
+                                            "threshold": 1976.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Recency",
+                                        "threshold": 81.5,
+                                        "left": {
+                                            "feature": "Year_Birth",
+                                            "threshold": 1983.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "Income",
+                                            "threshold": 47394.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "MntFruits",
+                            "threshold": 26.5,
+                            "left": {
+                                "feature": "NumCatalogPurchases",
+                                "threshold": 6.5,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 54.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "Income",
+                        "threshold": 42297.0,
+                        "left": {
+                            "feature": "Recency",
+                            "threshold": 37.5,
+                            "left": {
+                                "feature": "NumCatalogPurchases",
+                                "threshold": 0.5,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "feature": "NumWebVisitsMonth",
+                                    "threshold": 4.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "feature": "MntSweetProducts",
+                                        "threshold": 60.0,
+                                        "left": {
+                                            "feature": "Year_Birth",
+                                            "threshold": 1949.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "Income",
+                                "threshold": 42012.5,
+                                "left": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 19.5,
+                                    "left": {
+                                        "feature": "Recency",
+                                        "threshold": 75.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Year_Birth",
+                                        "threshold": 1957.5,
+                                        "left": {
+                                            "feature": "NumCatalogPurchases",
+                                            "threshold": 1.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "MntGoldProds",
+                                            "threshold": 25.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "NumCatalogPurchases",
+                            "threshold": 3.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 76.5,
+                                "left": {
+                                    "feature": "NumWebVisitsMonth",
+                                    "threshold": 8.5,
+                                    "left": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 23.5,
+                                        "left": {
+                                            "feature": "MntGoldProds",
+                                            "threshold": 20.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "NumStorePurchases",
+                                            "threshold": 12.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Income",
+                                        "threshold": 55951.5,
+                                        "left": {
+                                            "leaf": 1
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Year_Birth",
+                                    "threshold": 1974.0,
+                                    "left": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 59.5,
+                                        "left": {
+                                            "feature": "Recency",
+                                            "threshold": 79.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "Year_Birth",
+                                "threshold": 1961.5,
+                                "left": {
+                                    "feature": "NumWebVisitsMonth",
+                                    "threshold": 5.5,
+                                    "left": {
+                                        "feature": "MntFruits",
+                                        "threshold": 76.5,
+                                        "left": {
+                                            "feature": "NumCatalogPurchases",
+                                            "threshold": 5.5,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "Income",
+                                            "threshold": 74188.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Income",
+                                        "threshold": 47065.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "feature": "Recency",
+                                            "threshold": 24.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 46.5,
+                                    "left": {
+                                        "feature": "Income",
+                                        "threshold": 76499.5,
+                                        "left": {
+                                            "feature": "MntSweetProducts",
+                                            "threshold": 141.0,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "MntGoldProds",
+                                        "threshold": 34.5,
+                                        "left": {
+                                            "feature": "NumStorePurchases",
+                                            "threshold": 7.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "feature": "MntSweetProducts",
+                                            "threshold": 21.0,
+                                            "left": {
+                                                "leaf": 0
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "MntGoldProds",
+                    "threshold": 113.5,
+                    "left": {
+                        "feature": "MntFruits",
+                        "threshold": 0.5,
+                        "left": {
+                            "feature": "NumCatalogPurchases",
+                            "threshold": 1.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "Income",
+                                "threshold": 51297.0,
+                                "left": {
+                                    "feature": "Recency",
+                                    "threshold": 92.0,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    },
+                    "right": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 44.0,
+                        "left": {
+                            "leaf": 0
+                        },
+                        "right": {
+                            "feature": "Income",
+                            "threshold": 68763.0,
+                            "left": {
+                                "leaf": 1
+                            },
+                            "right": {
+                                "leaf": 0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "right": {
+            "feature": "Income",
+            "threshold": 81273.0,
+            "left": {
+                "feature": "Recency",
+                "threshold": 43.5,
+                "left": {
+                    "feature": "MntGoldProds",
+                    "threshold": 37.0,
+                    "left": {
+                        "feature": "NumCatalogPurchases",
+                        "threshold": 9.5,
+                        "left": {
+                            "leaf": 0
+                        },
+                        "right": {
+                            "leaf": 1
+                        }
+                    },
+                    "right": {
+                        "feature": "MntSweetProducts",
+                        "threshold": 180.0,
+                        "left": {
+                            "leaf": 1
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    }
+                },
+                "right": {
+                    "feature": "Income",
+                    "threshold": 77925.5,
+                    "left": {
+                        "leaf": 1
+                    },
+                    "right": {
+                        "feature": "MntFruits",
+                        "threshold": 23.5,
+                        "left": {
+                            "feature": "MntFruits",
+                            "threshold": 20.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 84.0,
+                                "left": {
+                                    "leaf": 1
+                                },
+                                "right": {
+                                    "leaf": 0
+                                }
+                            }
+                        },
+                        "right": {
+                            "leaf": 0
+                        }
+                    }
+                }
+            },
+            "right": {
+                "feature": "NumWebVisitsMonth",
+                "threshold": 0.5,
+                "left": {
+                    "leaf": 0
+                },
+                "right": {
+                    "feature": "NumCatalogPurchases",
+                    "threshold": 6.5,
+                    "left": {
+                        "feature": "MntFruits",
+                        "threshold": 133.0,
+                        "left": {
+                            "feature": "Income",
+                            "threshold": 90726.0,
+                            "left": {
+                                "feature": "MntGoldProds",
+                                "threshold": 187.5,
+                                "left": {
+                                    "feature": "NumStorePurchases",
+                                    "threshold": 12.5,
+                                    "left": {
+                                        "feature": "MntSweetProducts",
+                                        "threshold": 179.5,
+                                        "left": {
+                                            "feature": "NumWebVisitsMonth",
+                                            "threshold": 1.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 1
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 0
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Recency",
+                                    "threshold": 28.0,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "feature": "MntGoldProds",
+                                "threshold": 49.0,
+                                "left": {
+                                    "feature": "Year_Birth",
+                                    "threshold": 1990.0,
+                                    "left": {
+                                        "feature": "NumStorePurchases",
+                                        "threshold": 11.5,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "feature": "Recency",
+                                            "threshold": 71.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                },
+                                "right": {
+                                    "feature": "Income",
+                                    "threshold": 91052.5,
+                                    "left": {
+                                        "leaf": 0
+                                    },
+                                    "right": {
+                                        "leaf": 1
+                                    }
+                                }
+                            }
+                        },
+                        "right": {
+                            "feature": "Income",
+                            "threshold": 88696.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        }
+                    },
+                    "right": {
+                        "feature": "MntGoldProds",
+                        "threshold": 19.0,
+                        "left": {
+                            "feature": "Year_Birth",
+                            "threshold": 1983.5,
+                            "left": {
+                                "leaf": 0
+                            },
+                            "right": {
+                                "leaf": 1
+                            }
+                        },
+                        "right": {
+                            "feature": "MntFruits",
+                            "threshold": 20.5,
+                            "left": {
+                                "feature": "Recency",
+                                "threshold": 12.0,
+                                "left": {
+                                    "leaf": 0
+                                },
+                                "right": {
+                                    "leaf": 1
+                                }
+                            },
+                            "right": {
+                                "feature": "Recency",
+                                "threshold": 81.5,
+                                "left": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 26.5,
+                                    "left": {
+                                        "feature": "Income",
+                                        "threshold": 88140.0,
+                                        "left": {
+                                            "leaf": 0
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    },
+                                    "right": {
+                                        "feature": "Year_Birth",
+                                        "threshold": 1952.0,
+                                        "left": {
+                                            "feature": "Recency",
+                                            "threshold": 19.5,
+                                            "left": {
+                                                "leaf": 1
+                                            },
+                                            "right": {
+                                                "leaf": 0
+                                            }
+                                        },
+                                        "right": {
+                                            "leaf": 1
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "feature": "MntGoldProds",
+                                    "threshold": 33.5,
+                                    "left": {
+                                        "leaf": 1
+                                    },
+                                    "right": {
+                                        "leaf": 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
